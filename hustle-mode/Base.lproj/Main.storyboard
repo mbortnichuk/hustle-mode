@@ -50,6 +50,16 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOZ-UN-iQ0">
+                                        <rect key="frame" x="140" y="552" width="94" height="61"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                        <state key="normal" title="-&gt;">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vup-G9-dbW"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.29411764705882354" green="0.46274509803921571" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -59,12 +69,16 @@
                                     <constraint firstAttribute="trailingMargin" secondItem="A4p-C2-sk6" secondAttribute="trailing" constant="82" id="EL8-Ei-qAz"/>
                                     <constraint firstItem="iNh-QG-PDK" firstAttribute="centerX" secondItem="blT-MP-4cL" secondAttribute="centerX" id="Gpb-yn-IrW"/>
                                     <constraint firstItem="yN3-eP-R38" firstAttribute="leading" secondItem="blT-MP-4cL" secondAttribute="leadingMargin" constant="81" id="J5X-fT-chj"/>
+                                    <constraint firstAttribute="trailing" secondItem="BOZ-UN-iQ0" secondAttribute="trailing" constant="141" id="K3O-iS-LBG"/>
                                     <constraint firstItem="t7s-d4-Ios" firstAttribute="top" secondItem="blT-MP-4cL" secondAttribute="topMargin" constant="162" id="Ohx-ah-Plq"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="yN3-eP-R38" secondAttribute="trailing" constant="82" id="Ryf-m7-cay"/>
                                     <constraint firstItem="iNh-QG-PDK" firstAttribute="top" secondItem="yN3-eP-R38" secondAttribute="bottom" constant="99" id="UHH-Rb-0KD"/>
+                                    <constraint firstItem="BOZ-UN-iQ0" firstAttribute="leading" secondItem="blT-MP-4cL" secondAttribute="leading" constant="140" id="WM9-Mq-k8O"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="t7s-d4-Ios" secondAttribute="bottom" constant="-8" id="Yx0-Vf-hN3"/>
                                     <constraint firstItem="A4p-C2-sk6" firstAttribute="leading" secondItem="blT-MP-4cL" secondAttribute="leadingMargin" constant="81" id="cK5-RU-nvW"/>
+                                    <constraint firstItem="BOZ-UN-iQ0" firstAttribute="top" secondItem="A4p-C2-sk6" secondAttribute="bottom" constant="28" id="fCW-7K-ctF"/>
                                     <constraint firstItem="t7s-d4-Ios" firstAttribute="leading" secondItem="blT-MP-4cL" secondAttribute="leadingMargin" constant="-8" id="fRK-DW-QWt"/>
+                                    <constraint firstAttribute="bottom" secondItem="BOZ-UN-iQ0" secondAttribute="bottom" constant="54" id="gl9-2z-zhg"/>
                                     <constraint firstItem="A4p-C2-sk6" firstAttribute="top" secondItem="yN3-eP-R38" secondAttribute="bottom" constant="36" id="xlG-Kx-bJs"/>
                                     <constraint firstItem="iNh-QG-PDK" firstAttribute="leading" secondItem="blT-MP-4cL" secondAttribute="leadingMargin" constant="-19.5" id="zmb-4C-PU7"/>
                                 </constraints>
@@ -91,6 +105,7 @@
                         <outlet property="cloudHolder" destination="blT-MP-4cL" id="Y3F-pu-vgn"/>
                         <outlet property="darkBlueBG" destination="gVc-Ip-Q6g" id="YJJ-iZ-RRg"/>
                         <outlet property="hustleLbl" destination="yN3-eP-R38" id="tFR-bR-rca"/>
+                        <outlet property="onBtn" destination="BOZ-UN-iQ0" id="Ss4-h8-iNH"/>
                         <outlet property="onLbl" destination="A4p-C2-sk6" id="C9U-gw-MYi"/>
                         <outlet property="powerBtn" destination="jr9-iK-baS" id="Xgq-lz-QGN"/>
                         <outlet property="rocket" destination="iNh-QG-PDK" id="Znh-Oe-Isb"/>

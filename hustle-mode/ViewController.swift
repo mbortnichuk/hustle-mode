@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var rocket: UIImageView!
     @IBOutlet weak var hustleLbl: UILabel!
     @IBOutlet weak var onLbl: UILabel!
-//    @IBOutlet weak var onBtn: UIButton!
+    @IBOutlet weak var onBtn: UIButton!
     
     var player: AVAudioPlayer!
     
@@ -48,10 +48,17 @@ class ViewController: UIViewController {
         }) { (finished) in
             self.hustleLbl.isHidden = false
             self.onLbl.isHidden = false
+            self.onBtn.isHidden = false
         }
     }
     
-
+    @IBAction func onBtnPressed(_ sender: Any) {
+        self.hustleLbl.isHidden = true
+        self.onLbl.isHidden = true
+        self.cloudHolder.isHidden = true
+        self.darkBlueBG.isHidden = false
+    }
+    
     
 
 
